@@ -6,15 +6,16 @@
 }
 #header .titbar{
     height: 100%;
-    width: 100%;
+    width: 900px;
     display: table;
+    margin: 0px auto;
 }
 #header .tit{
     height: 100%;
     width: 200px;
     color: #ffffff;
     display: table-cell;
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
 }
 #header .tit a{
