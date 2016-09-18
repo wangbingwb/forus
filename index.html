@@ -7,14 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="cs/base.css" media="screen">
     <link rel="stylesheet" type="text/css" href="cs/forus.css" media="screen">
+    <script src="js/base.js" type="text/javascript"></script>
 </head>
-<body>
+<body class="pc">
+<script>
+    if(!IsPC()){
+        var node = document.getElementsByClassName("pc");
+        if(node.length == 1){
+            node[0].className = "mo";
+        }
+    }
+</script>
 <header id="header">
     <div class="titbar">
         <div class="tit">
             <a href="javascript:;">For Us</a>
         </div>
         <div class="nav">
+            <img src="img/set.png">
             <ul>
                 <li><a href="javascript:;">HOME</a></li>
                 <li><a href="javascript:;">HOMETOWN</a></li>

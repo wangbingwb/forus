@@ -1,125 +1,196 @@
-#header{
+.pc #header{
     height: 50px;
     background-color: #131232;
     box-shadow: 0px 2px 10px 0px #131313;
     margin-bottom: 6px;
 }
-#header .titbar{
+.pc #header .titbar{
     height: 100%;
     width: 900px;
     display: table;
     margin: 0px auto;
 }
-#header .tit{
+.pc #header .tit{
     height: 100%;
     width: 200px;
     color: #ffffff;
     display: table-cell;
     text-align: left;
+    padding-left: 20px;
     vertical-align: middle;
 }
-#header .tit a{
+.pc #header .tit a{
     color: #ffffff;
     font-size: 1.5rem;
     font-weight: bold;
     transition: all 1s;
 }
-#header .nav{
+.pc #header .nav{
     height: 100%;
     display: table-cell;
     text-align: right;
     vertical-align: bottom;
 }
-#header .nav ul li{
+.pc #header .nav img{
+    display: none;
+}
+.pc #header .nav ul li{
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 5px;
     list-style: none;
 }
-#header .nav ul li a{
+.pc #header .nav ul li a{
     color: #ffffff;
 }
-#header .nav ul li a:hover{
+.pc #header .nav ul li a:hover{
     color: #BEBEBE;
 }
 
-#body{
+.pc #body{
     text-align: center;
     width: 900px;
     margin: 0px auto;
 }
 
-#body .tip{
+.pc #body .tip{
     display: inline-block;
     position: relative;
     height: 300px;
     width: 400px;
     margin-top: 15%;
 }
-#body .tip .b{
+.pc #body .tip .b{
     height: 100%;
     width: 100%;
     position: absolute;
 }
-#body .tip .b ul{
+.pc #body .tip .b ul{
     display: table;
     height: 100%;
     width: 100%;
 }
-#body .tip .b ul li{
+.pc #body .tip .b ul li{
     list-style: none;
     display: table-cell;
     vertical-align: top;
 }
-#body .tip .b ul li a{
+.pc #body .tip .b ul li a{
     display: block;
     width: 70%;
     height: 50%;
     transition: all 1s;
 }
-#body .tip .b ul li:nth-child(1) a{
+.pc #body .tip .b ul li:nth-child(1) a{
     height: 70%;
     background-color: #8C8BAE;
 }
-#body .tip .b ul li:nth-child(2) a{
+.pc #body .tip .b ul li:nth-child(2) a{
     height: 60%;
     background-color: #6E6CA1;
 }
-#body .tip .b ul li:nth-child(3) a{
+.pc #body .tip .b ul li:nth-child(3) a{
     height: 50%;
     background-color: #6765A3;
 }
-#body .tip .b ul li:nth-child(4) a{
+.pc #body .tip .b ul li:nth-child(4) a{
     height: 40%;
     background-color: #605F91;
 }
-#body .tip .b ul li:nth-child(5) a{
+.pc #body .tip .b ul li:nth-child(5) a{
     height: 30%;
     background-color: #464574;
 }
-#body .tip .b ul li:nth-child(6) a{
+.pc #body .tip .b ul li:nth-child(6) a{
     height: 50%;
     background-color: #292851;
 }
-#body .tip .b ul li:nth-child(7) a{
+.pc #body .tip .b ul li:nth-child(7) a{
     height: 60%;
     background-color: #131232;
 }
-#body .tip .b ul li:hover a{
+.pc #body .tip .b ul li:hover a{
     height: 80%;
 }
-#body .tip .t{
+.pc #body .tip .t{
     height: 100%;
     width: 100%;
     position: absolute;
     display: table;
 }
-#body .tip .t .info{
+.pc #body .tip .t .info{
     display: table-cell;
     vertical-align: bottom;
     font-size: larger;
     font-weight: bolder;
 }
-#body .tip .t .info a{
+.pc #body .tip .t .info a{
     display: block;
+}
+/*以上是PC端样式*/
+
+/*以下是移动端样式*/
+.mo #header{
+    height: 50px;
+    background-color: #131232;
+    box-shadow: 0px 2px 10px 0px #131313;
+    margin-bottom: 6px;
+}
+.mo #header .titbar{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.mo #header .tit{
+    float: left;
+    height: 100%;
+    padding-left: 10px;
+}
+.mo #header .tit a{
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+}
+.mo #header .nav{
+    float: right;
+    height: 100%;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.mo #header .nav img{
+    height: 40px;
+    width: 40px;
+}
+.mo #header .nav ul{
+    display: none;
+}
+.mo #header .nav ul li{
+}
+.mo #header .nav ul li a{
+}
+.mo #header .nav ul li a:hover{
+}
+
+.mo #body{
+}
+
+.mo #body .tip{
+    margin-top: 100px;
+}
+.mo #body .tip .b{
+    display: none;
+}
+.mo #body .tip .t{
+}
+.mo #body .tip .t .info{
+}
+.mo #body .tip .t .info a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
