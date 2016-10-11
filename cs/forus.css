@@ -226,7 +226,7 @@
 }
 .pc #body .summary .imgs .bz{}
 .pc #body .summary .imgs .bs li a{
-    font-family: gbz;
+    font-family: gbz ,"åæ–‡æ¥·ä½“";
     font-weight: bold;
 }
 .pc #body .article{
@@ -265,14 +265,14 @@
     margin-left: 10px;
 }
 .pc #body .article p{
-    font-family: gbz;
+    font-family: gbz,"åæ–‡æ¥·ä½“";
     text-indent: 2em;
     text-align: left;
     padding-bottom: 20px;
 }
-/*ÒÔÉÏÊÇPC¶ËÑùÊ½*/
+/*ä»¥ä¸ŠPCç«¯æ ·å¼*/
 
-/*ÒÔÏÂÊÇÒÆ¶¯¶ËÑùÊ½*/
+/*ä»¥ä¸‹æ‰‹æœºç«¯æ ·å¼*/
 .mo #header{
     height: 50px;
     background-color: #131232;
