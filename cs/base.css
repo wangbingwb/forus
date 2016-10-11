@@ -1,9 +1,12 @@
+@font-face {
+    font-family: 'gbz';
+    src: url('gbz.ttf');
+}
 * {
     margin: 0px;
     padding: 0px;
     font-family: "Microsoft YaHei", Verdana, Geneva, sans-serif;
 }
-
 body.pc {
     min-width: 900px;
     scrollbar-arrow-color: #f4ae21; /*三角箭头的颜色*/
@@ -110,4 +113,25 @@ a:hover {
 
 .color_green {
     color: green;
+}
+ul{
+    list-style: none;
+}
+@keyframes roll {
+    0%{
+        transform: rotateY(0deg);
+        background-color: #121242;
+    }
+    50%{
+        transform: rotateY(90deg);
+        background-color: #121242;
+    }
+    51%{
+        transform: rotateY(270deg);
+        background-color: #3e423f;
+    }
+    100%{
+        transform: rotateY(360deg);
+        background-color: #3e423f;
+    }
 }

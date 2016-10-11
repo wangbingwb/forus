@@ -2,7 +2,7 @@
     height: 50px;
     background-color: #131232;
     box-shadow: 0px 2px 10px 0px #131313;
-    margin-bottom: 6px;
+    margin-bottom: 15px;
 }
 .pc #header .titbar{
     height: 100%;
@@ -127,6 +127,149 @@
 .pc #body .tip .t .info a{
     display: block;
 }
+.pc #body .summary{
+    width: 30%;
+    vertical-align: top;
+    display: inline-block;
+}
+.pc #body .photos{
+    width: 70%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.pc #body .photos>ul{
+}
+.pc #body .photos>ul>li{
+    vertical-align: top;
+    display: inline-block;
+    height: 180px;
+    width: 180px;
+    border: 2px solid rgba(19, 18, 50, 0.05);
+}
+.pc #body .photos>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+}
+.pc #body .photos ul li{
+    position: relative;
+    overflow: hidden;
+}
+.pc #body .photos>ul>li>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+}
+.pc #body .photos ul li a:before,
+.pc #body .photos ul li a:after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    background: rgba(202, 202, 202, 0.37);
+    background-size: 60% 60%;
+    transition: transform 0.3s;
+}
+.pc #body .photos ul li a:after{
+    transform: rotate(-90deg);
+    background: url('../img/re.png') no-repeat center;
+    background-size: 60% 60%;
+}
+.pc #body .photos ul li a:hover:before{
+    visibility: inherit;
+}
+.pc #body .photos ul li a:hover:after{
+    visibility: inherit;
+    transform: rotate(0deg);
+}
+.pc #body .photos>ul>li>a>img{
+    width: 180px;
+    height: 180px;
+}
+.pc #body .photos>ul>li>ul>li>a>img{
+    width: 88px;
+    height: 88px;
+}
+.pc #body .photos>ul>li>ul{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pc #body .photos>ul>li>ul>li{
+    float: left;
+    height: 88px;
+    width: 88px;
+}
+.pc #body .photos>ul>li>ul>li:nth-child(1){
+    border-right: 2px solid rgba(19, 18, 50, 0.05);
+    border-bottom: 2px solid rgba(19, 18, 50, 0.05);
+}
+.pc #body .photos>ul>li>ul>li:nth-child(2){
+    border-left: 2px solid rgba(19, 18, 50, 0.05);
+    border-bottom: 2px solid rgba(19, 18, 50, 0.05);
+}
+.pc #body .photos>ul>li>ul>li:nth-child(3){
+    border-right: 2px solid rgba(19, 18, 50, 0.05);
+    border-top: 2px solid rgba(19, 18, 50, 0.05);
+}
+.pc #body .photos>ul>li>ul>li:nth-child(4){
+    border-left: 2px solid rgba(19, 18, 50, 0.05);
+    border-top: 2px solid rgba(19, 18, 50, 0.05);
+}
+.pc #body .summary .imgs .bz{}
+.pc #body .summary .imgs .bs li a{
+    font-family: gbz;
+    font-weight: bold;
+}
+.pc #body .article{
+    padding: 25px 40px;
+}
+.pc #body .article .ct{
+    overflow: hidden;
+    float: right;
+    box-shadow: 0px 0px 20px -2px;
+    transform: rotate(7deg);
+    margin: 10px 10px 10px 25px;
+}
+.pc #body .article .ct img{
+    transition: all .6s;
+    transform-origin: center;
+}
+.pc #body .article .ct img:hover{
+    transform: scale(1.05);
+}
+.pc #body .article .title{
+    border-top: 3px groove;
+    border-bottom: 3px groove;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.pc #body .article .title:before{
+    content: "";
+    display: inline-block;
+    height: 0px;
+    width: 0px;
+    vertical-align: middle;
+    border: 10px solid transparent;
+    border-left: 10px solid rgb(245, 242, 58);;
+    margin-left: 10px;
+}
+.pc #body .article p{
+    font-family: gbz;
+    text-indent: 2em;
+    text-align: left;
+    padding-bottom: 20px;
+}
 /*以上是PC端样式*/
 
 /*以下是移动端样式*/
@@ -134,7 +277,7 @@
     height: 50px;
     background-color: #131232;
     box-shadow: 0px 2px 10px 0px #131313;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 .mo #header .titbar{
     overflow: hidden;
@@ -167,18 +310,36 @@
     width: 40px;
 }
 .mo #header .nav ul{
+    position: absolute;
+    right: 0px;
     display: none;
+    list-style: none;
+    border-bottom-left-radius: 5px;
+    background-color: #131232;
+    border-top-color: transparent;
+    box-shadow: -1px 1px 4px 0px;
+    padding: 10px;
+    z-index: 100;
+}
+.mo #header .nav ul.show{
+    display: block;
 }
 .mo #header .nav ul li{
 }
 .mo #header .nav ul li a{
+    padding: 5px;
+    color: #ffffff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.mo #header .nav ul li a:active{
+    background-color: #121242;
 }
 .mo #header .nav ul li a:hover{
 }
-
 .mo #body{
 }
-
 .mo #body .tip{
     margin-top: 100px;
 }
@@ -193,4 +354,105 @@
     display: inline-block;
     width: 100%;
     text-align: center;
+}
+.mo #body .summary{
+    display: none;
+}
+.mo #body .photos>ul>li{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.mo #body .photos>ul>li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.mo #body .photos>ul>li a img{
+    display: block;
+    width: 100%;
+}
+.mo #body .photos>ul>li:nth-child(3),
+.mo #body .photos>ul>li:nth-child(6){
+    display: none;
+}
+.mo #body .photos>ul>li>ul>li{
+    width: 50%;
+    display: inline-block;
+}
+.mo #body .photos ul li{
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.mo #body .photos ul li a:before,
+.mo #body .photos ul li a:after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    background: rgba(202, 202, 202, 0.37);
+    background-size: 60% 60%;
+    transition: transform 0.3s;
+}
+.mo #body .photos ul li a:after{
+    transform: rotate(-90deg);
+    background: url('../img/re.png') no-repeat center;
+    background-size: 60% 60%;
+}
+.mo #body .photos ul li a:active:before{
+    visibility: inherit;
+}
+.mo #body .photos ul li a:active:after{
+    visibility: inherit;
+    transform: rotate(0deg);
+}
+.mo #body .article .abody{
+    width: 92%;
+    border: 0px solid #666666;
+    padding: 2%;
+    margin: 0px 2% 2%;
+
+    box-shadow: 0px 5px 10px 0px #888888;
+}
+.mo #body .article .ct{
+    border-top: 1px solid darkred;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.mo #body .article .ct img{
+    width: 100%;
+}
+.mo #body .article p{
+    text-indent: 2em;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.mo #body .article .title{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background-color: #131313;
+
+}
+.mo #body .article .title a{
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.mo #body .article .title:before{
+    content: "";
+    display: inline-block;
+    height: 0px;
+    width: 0px;
+    vertical-align: middle;
+    border: 10px solid transparent;
+    border-left: 10px solid rgb(245, 242, 58);;
+    margin-left: 10px;
 }

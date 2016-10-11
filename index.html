@@ -7,17 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="cs/base.css" media="screen">
     <link rel="stylesheet" type="text/css" href="cs/forus.css" media="screen">
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="js/base.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
 </head>
 <body class="pc">
-<script>
-    if(!IsPC()){
-        var node = document.getElementsByClassName("pc");
-        if(node.length == 1){
-            node[0].className = "mo";
-        }
-    }
-</script>
 <header id="header">
     <div class="titbar">
         <div class="tit">
@@ -26,7 +20,7 @@
         <div class="nav">
             <img src="img/set.png">
             <ul>
-                <li><a href="javascript:;">HOME</a></li>
+                <li><a href="/forus/index.html">HOME</a></li>
                 <li><a href="javascript:;">HOMETOWN</a></li>
                 <li><a href="javascript:;">FRIENDS</a></li>
                 <li><a href="javascript:;">CONTACT</a></li>
@@ -36,24 +30,68 @@
     </div>
 </header>
 <div id="body">
-    <div class="tip">
-        <div class="t">
-            <div class="info">
-                <a>网站建设中...</a>
-                <a>Website is building ...</a>
+    <div class="summary">
+        <div class="imgs">
+            <img class="bz" src="img/icon.jpg">
+            <div class="bs">
+                <ul>
+                    <li><a href="javascript:;">Welcome to ForUs</a></li>
+                    <li><a href="javascript:;">这是一个个人网站</a></li>
+                </ul>
             </div>
         </div>
-        <div class="b">
+        <div class="info">
             <ul>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
             </ul>
         </div>
+    </div><!--
+ --><div class="photos">
+        <ul>
+            <li><a><img src="img/15.jpg"></a></li><!--
+         --><li>
+                <ul>
+                    <li><a><img src="img/1.jpg"></a></li><!--
+                 --><li><a><img src="img/2.jpg"></a></li><!--
+                 --><li><a><img src="img/3.jpg"></a></li><!--
+                 --><li><a><img src="img/4.jpg"></a></li>
+                </ul>
+            </li><!--
+         --><li><a><img src="img/5.jpg"></a></li><!--
+         --><li>
+                <ul>
+                    <li><a><img src="img/6.jpg"></a></li><!--
+                 --><li><a><img src="img/7.jpg"></a></li><!--
+                 --><li><a><img src="img/8.jpg"></a></li><!--
+                 --><li><a><img src="img/9.jpg"></a></li>
+                </ul>
+            </li><!--
+         --><li><a><img src="img/10.jpg"></a></li><!--
+         --><li>
+                <ul>
+                    <li><a><img src="img/11.jpg"></a></li><!--
+                 --><li><a><img src="img/12.jpg"></a></li><!--
+                 --><li><a><img src="img/13.jpg"></a></li><!--
+                 --><li><a><img src="img/14.jpg"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="article">
+        <div class="title"><a href="javascript:;">友谊</a></div>
+        <div class="abody">
+            <p>有人说，友情，就像一朵玫瑰花，因为它带着刺，所以让人难以靠近；有人说，友情就像一杯热茶，要慢慢品尝，才会尝出香甜；还有人说，友情就像一棵树上的果子，酸甜只有种植的人才会知道。</p>
+            <div class="ct"><img src="img/timg.jpg"></div>
+            <p>但是在我眼里，友情就像海，汹涌澎湃，潮起潮落，但不管它怎么变，海还是海，不会变成别的。友情可能就是海中那颗璀璨夺目的贝壳，被海水拍打、收回，经受磨练之后，只会更加璀璨耀眼。</p>
+            <p>有时候，我又会认为，友情就是时钟上的秒针。正因为它太被看重，所以它走的老快了，让我们追不上，只留下回忆，但也是美好。</p>
+            <p>又有时候，我会认为，友情就是暖炉，在寒冷的冬季，来考暖你的心。有时候像一颗糖，在嘴苦的时候，让你感到一丝甜蜜，那是最大的慰藉。</p>
+            <p>还有时候，它会是一把伞，在蒸蒸日下，为你挡住阳光；在大风大雨的时候，为你挡风避雨。有时它又是一棵大树，在你累了困了时，给予你依靠。</p>
+            <p>有时……有时……</p>
+            <p>就是因为有那么多的有时，因为有那么多的美文佳句来赞美赞颂它，所以，它变得更加美好。让我们更加缺它不可。</p>
+            <p>茫茫人海，漫漫人生中，过程是最美的，相知是最难的，结果是最期盼的，相思是最苦的，等待是最漫长的，友情是最珍贵的。</p>
+            <p>曾经，当我还是默默无闻的中等生时，我是多么渴望友谊，因为有了朋友，我就有了倾诉的对象，就会有人与我一同分担，可没有，没有人在意我。我于是便在堕落的边缘徘徊。但那一次，升学考出乎意料的优秀，使我拼了命的向前，因为我要为升学考负责，我要做出一番成绩。于是，便有了如今的我。如今的我，终于实现了当初的愿望，终于有了梦寐以求的朋友，终于不再孤单，也终于找到了曾经陌生的两个字眼，友谊。在经历了风风雨雨，我再回头的某一瞬间，才发现友谊离我的距离是零；朋友，正与我手牵着手……</p>
+            <p>过去的经历锻炼了我，是我能真正地重视友谊，也害怕着有一天，我退步了，朋友也成了敷衍自己的工具，想到这，我又只能发疯似的往前冲，绝不能让友谊转瞬即逝！没想到，我会为了友谊付出一切，没想到。</p>
+            <p>友情如水，淡而长远；友情如茶，香而清纯；友情如酒，烈而沁心；友情如雨，细而连绵；友情如雪，松而亮洁。人生短暂，珍惜友情。</p>
+        </divabody>
     </div>
 </div>
 </body>
